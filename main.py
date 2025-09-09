@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 from openai import OpenAI
-from utility import check_password()
+from utility import check_password
 
 # --- Load API keys from Streamlit secrets ---
 google_api_key = st.secrets["GOOGLE_API_KEY"]
