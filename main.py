@@ -3,17 +3,16 @@ import requests
 from openai import OpenAI
 from utility import check_password()
 
-# Do not continue if check_password is not True.  
-if not check_password():  
-    st.stop()
-
-
 # --- Load API keys from Streamlit secrets ---
 google_api_key = st.secrets["GOOGLE_API_KEY"]
 google_cse_id = st.secrets["GOOGLE_CSE_ID"]
 
 # Create OpenAI client
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
+# Do not continue if check_password is not True.  
+if not check_password():  
+    st.stop()
 
 
 # --- App Title ---
