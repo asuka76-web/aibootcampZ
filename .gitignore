@@ -1,0 +1,11 @@
+# Ignore secret files
+.streamlit/secrets.toml
+
+# Virtual Environents
+venv/
+.env
+
+# Optional: VS Code, Python cache
+__pycache__/
+*.pyc
+.vscode/
